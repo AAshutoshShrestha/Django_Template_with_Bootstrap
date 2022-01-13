@@ -1,0 +1,33 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block branding %}
+    <h1><img src="header_img"/>AdminPanel</h1>
+{% endblock %}
+
+
+{% block content %}
+    <h1>site admin</h1>
+{% endblock %}
+
+{% block extrastyle %}
+<style>
+
+</style>
+
+{% endblock %}
+
+{% block usertools %}
+<!-- default admin dashboard nav bar settings -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+<div class="collapse navbar-collapse" id="navbarNav" style="padding-left:4px;">
+                <a class="nav-link text-white " href="/home">Home</a>
+                <a class="nav-link text-white " href="/admin/password_change/">Change Password</a>                
+                <a class="nav-link text-white " href="/admin/logout/">Logout</a>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- <a class="nav-link text-white " href="{% url 'add-emp' %}">Add</a> -->

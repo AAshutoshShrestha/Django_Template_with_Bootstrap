@@ -1,0 +1,28 @@
+{% extends "view/base.html" %}
+{% load static %}
+
+{% block title %} home page | app_name {% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <h1>this is the home page</h1>
+    <p>IT is working properly</p><br>
+
+</div>
+
+<div class="container">
+    <h6>This is django admin template made by Aashutosh Shrestha</h6>
+    <h6>Change the appname on project_name>setttings.py</h6>
+    <h6>Rename project_name and app_name accordingly</h6>
+    <h6>On appname>apps.py update name field as your app name </h6>
+    <h6>admin panel access</h6>
+    <ul>
+        <li>username : admin</li>
+        <li>password : admin@123 </li>
+    </ul>
+    <h6>on app_name>>admin.py update navbar links as required</h6>
+    <img src="{% static 'img/sample.jpg' %}" alt="" width="500px" height="500px">
+</div>
+
+{% endblock %}
